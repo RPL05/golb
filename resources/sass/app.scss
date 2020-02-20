@@ -1,6 +1,14 @@
-@tailwind base;
 
-@tailwind components;
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-@tailwind utilities;
+//variables
+@import 'variables';
 
+//bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+    background-color:#fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

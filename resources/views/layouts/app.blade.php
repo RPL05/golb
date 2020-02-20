@@ -33,7 +33,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a href="{{route('master.jurusan-kelas')}}" class="nav-link">Master Jurusan dan Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.industri')}}" class="nav-link">Master Industri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.nilai')}}" class="nav-link">Master Nilai Praktek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.monitoring')}}" class="nav-link">Master Monitoring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.jurusan-kelas')}}" class="nav-link">Master Agenda</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -41,11 +55,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Sign In') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Sign Up') }}</a>
                                 </li>
                             @endif
                         @else
