@@ -56,6 +56,11 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <p style="text-align:justify">
+                                Demikian permohonan ini kami sampaikan.
+                                Atas perhatian dan kesediaan Bapak/Ibu menerima pesertaPraktik
+                                Kerja Industri (Prakerin), kami mengucapkan terimakasih.
+                            </p>
                                 <div class="py-4">
                             <div class="d-flex">
                                 <div class="mr-auto">
