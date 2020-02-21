@@ -38,6 +38,7 @@
                                 <button type="submit" class="btn btn-outline-info">
                                     Save
                                 </button>
+                                <a href="{{route('master.jurusan-kelas')}}" class="btn btn-outline-secondary">Kembali</a>
                             </div>
                         </form>
                     </div>

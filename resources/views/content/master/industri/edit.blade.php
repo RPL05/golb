@@ -8,7 +8,7 @@
                     <div class="card-body">
                         <div class="pt-3 mb-3">
                             <h5 class="text-muted font-weight-bold">
-                                Form Industri
+                                Form Edit Industri
                             </h5>
                         </div>
                         <form action="{{route('master.update.industri', $temukanIndustri->id)}}" method="post">
@@ -42,6 +42,7 @@
                                 <button type="submit" class="btn btn-outline-info">
                                     Save
                                 </button>
+                                <a href="{{route('master.industri')}}" class="btn btn-outline-secondary">Kembali</a>
                             </div>
                         </form>
                     </div>

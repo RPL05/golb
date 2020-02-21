@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <a href="{{route('master.jurusan-kelas')}}" class="nav-link">Master Agenda</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{route('siswa.ambil.form-register.psg')}}" class="nav-link">Form Pengajuan PSG</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

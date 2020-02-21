@@ -56,20 +56,42 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                    <br>
-                                    <p style="text-align:justify">Demikian surat permohonan ini kami sampaikan dengan harapan Bapak/Ibu dapat mengabulkan . Atas Perhatian dan kerjasamanya Kami ucapkan Terima Kasih</p>
-                                    <br>
-                                    <br>
-                                    <p style="text-align:right">Bekasi, 12 Januari 2020</p>
-                                    <br>
-                                    <br>
-                                    <p style="text-align:right">Kepala Sekolah</p>
+                                <div class="py-4">
+                            <div class="d-flex">
+                                <div class="mr-auto">
+                                    <h5>Kepala Sekolah</h5>
                                     <br>
                                     <br>
                                     <br>
-                                    <p style="text-align:right">Miftachurochman, S.T</p>
                                     <br>
                                     <br>
+                                    <h5>Miftachurochman, S.T</h5>
+                                </div>
+
+                                <div class="">
+                                    <h5>Hormat kami</h5>
+                                    <h5>Kepala Program Keahlian</h5>
+                                    <h5>RPL</h5>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h5>Ahfid Bachtiar, S.Kom</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <tbody>
+                                    <tr>
+                                        <td>
+                                            <form action="" method="post">
+                                            @csrf
+                                                <div class="d-flex justify-content-center">
+                                                    <button type="submit" class="btn btn-info ">Setujui Permintaan PSG</button>
+                                                    <a href="{{route('master.industri')}}" class="btn btn-outline-secondary border-0">Kembali</a>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
                             </div>
                         </div>
                     </div>

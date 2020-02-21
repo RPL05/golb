@@ -28,10 +28,9 @@
                                     <td>Perjudian</td>
                                     <td>PT.Duit</td>
                                     <td>
-                            <!-- Action edit data dan hapus data  -->
+                            <!-- Action Detail PSG  -->
                             <form action="" method="post">
                             @csrf
-                            @method('DELETE')
                                 <a href="{{route('master.tampilkan.detail.permohonan.pkl-psg')}}" class="btn btn-outline-info btn-sm">
                                      Detail Pengajuan
                                </a>

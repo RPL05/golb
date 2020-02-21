@@ -53,6 +53,10 @@ Route::group(['prefix' => 'master'], function(){
 
 });
 
+Route::group(['prefix' => 'siswa'], function(){
+
+    route::get('ambil/form-register/psg','Siswa\PengajuanController@create')->name('siswa.ambil.form-register.psg');
+});
 Route::get('/', function () {
     return view('welcome');
 });
