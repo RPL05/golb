@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-<div class="row pyt-4">
+<div class="row py-4">
     <!-- posisi image dan komen -->
     <div class="col-md-8">
         <!-- posisi image pembuka -->
@@ -33,7 +33,7 @@
         <!-- penutup inforamsi -->
     <!-- posisi up next -->
     <div class="col md-4">
-        <div class="card mb-2">
+        <div class="card mb-2" >
             <div class="card-body">
                 <div class="d-flex">
                     <div class="mr-auto">

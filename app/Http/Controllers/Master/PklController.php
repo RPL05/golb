@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Master;
 
+use App\Pengajuan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,9 @@ class PklController extends Controller
      */
     public function index()
     {
-        return view('content.master.pkl.index');
+        $pengajuanpsg = Pengajuan::with('jurusan','industri')->where('status','pengajuan psg')->paginate(5);
+
+        return view('content.master.pkl.index', compact('pengajuanpsg'));
     }
 
     /**
@@ -44,9 +47,11 @@ class PklController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        return view ('content.master.pkl.show');
+        $pengajuan = Pengajuan::with('industri', 'jurusan')->find($id);
+
+        return view('content.master.pkl.show',compact('pengajuan'));
     }
 
     /**
@@ -80,6 +85,10 @@ class PklController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $pengajuan = Pengajuan::find($id);
+
+        $pengajuan -> delete($pengajuan->all());
+
+        return redirect()->back();
     }
 }

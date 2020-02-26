@@ -32,7 +32,7 @@ Route::group(['prefix' => 'master'], function(){
 
     route::post('kirim/data/baru/industri','Master\IndustriController@store')->name('master.kirim.data.baru.industri');
 
-    route::get('edit1-industri/{industri}', 'Master\IndustriController@edit')->name('master.edit1-industri');
+    route::get('edit1-industri/{industri}', 'Master\IndustriController@edit')->name('master.edit-industri');
 
     route::put('update/industri/{industri}', 'Master\IndustriController@update')->name('master.update.industri');
 
@@ -41,7 +41,9 @@ Route::group(['prefix' => 'master'], function(){
     //master PKL
     route::get('pkl', 'Master\PklController@index')->name('master.pkl');
 
-    route::get('tampilkan/detail/permohonan/pkl-psg','Master\PklController@show')->name('master.tampilkan.detail.permohonan.pkl-psg');
+    route::get('tampilkan/detail/permohonan/pkl-psg/{pengajuan}','Master\PklController@show')->name('master.tampilkan.detail.permohonan.pkl-psg');
+
+    route::delete('hapus/data/pengajuan/{pengajuan}','Master\PklController@destroy')->name('master.hapus.data.pengajuan');
 
     // master nilai
     route::get('nilai','Master\NilaiController@index')->name('master.nilai');

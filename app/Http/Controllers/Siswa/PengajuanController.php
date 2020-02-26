@@ -114,6 +114,6 @@ class PengajuanController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }

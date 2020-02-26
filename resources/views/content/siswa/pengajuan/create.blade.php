@@ -38,7 +38,7 @@
                                     @forelse($jurusans as $jurusan)
                                         <option value="{{$jurusan->id}}">{{$jurusan->nama_kelas}} - {{$jurusan->nama_jurusan}}</option>
                                     @empty
-                                        <option value="">Maaf Belum ada jurusan yang tersedia.</option>
+                                        <option value="">XI RPL</option>
                                     @endforelse
                             </select>
                             </div>
@@ -100,6 +100,7 @@
                     <button type="submit" class="btn btn-info">
                         Kirim pengajuan saya
                     </button>
+                    <a href="{{route('master.pkl')}}" class="btn btn-outline-secondary">Kembali</a>
                 </div>
             </form>
         </div>

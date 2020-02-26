@@ -35,7 +35,7 @@
                             <form action="{{route('master.hapus.data.industri', $industri->id)}}" method="post">
                             @csrf
                             @method('DELETE')
-                                <a href="{{route('master.edit1-industri', $industri->id)}}" class="btn btn-outline-info btn-sm">
+                                <a href="{{route('master.edit-industri', $industri->id)}}" class="btn btn-outline-info btn-sm">
                                      Edit Data
                                </a>
                                <a href="{{route('master.pkl', $industri->id)}}" class="btn btn-outline-success btn-sm">

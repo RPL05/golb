@@ -36,23 +36,20 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>NO</th>
-                                            <th>NIS</th>
-                                            <th>NAMA</th>
-                                            <th>L / P</th>
-                                            <th>PROGRAM KEAHLIAN</th>
-                                            <th>NOMOR TELEPON</th>
-                                            <th>ACTION</th>
+                                            <th>Nama</th>
+                                            <th>L/P</th>
+                                            <th>Tkt/Kelas</th>
+                                            <th>Jurusan / Keahlian</th>
+                                            <th>Alamat Rumah</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>600070952</td>
-                                            <td>M.Bayu.Setiawan</td>
-                                            <td>Laki - Laki</td>
-                                            <td>Rekayasa Perangkat Lunak</td>
-                                            <td>089698922721</td>
+                                            <td>{{$pengajuan->nama}}</td>
+                                            <td>{{$pengajuan->jenis_kelamin}}</td>
+                                            <td>{{$pengajuan->jurusan->nama_kelas}}</td>
+                                            <td>{{$pengajuan->jurusan->nama_jurusan}}</td>
+                                            <td>{{$pengajuan->alamat}}</td>
                                         </tr>
                                     </tbody>
                                 </table>

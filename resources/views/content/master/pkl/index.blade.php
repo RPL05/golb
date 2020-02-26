@@ -14,7 +14,6 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>NIS</th>
                                 <th>Nama Siswa</th>
                                 <th>Program / Keahlian</th>
                                 <th>Nama PT</th>
@@ -22,23 +21,33 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @forelse($pengajuanpsg as $pengajuan)
                                 <tr>
-                                    <td>1236481618</td>
-                                    <td>Manusia</td>
-                                    <td>Perjudian</td>
-                                    <td>PT.Duit</td>
+                                    <td>{{$pengajuan->nama}}</td>
+                                    <td>{{$pengajuan->jurusan->nama_kelas}} - {{$pengajuan->jurusan->nama_jurusan}}</td>
+                                    <td>{{$pengajuan->industri->nama_industri}}</td>
                                     <td>
                             <!-- Action Detail PSG  -->
-                            <form action="" method="post">
+                            <form action="{{route('master.hapus.data.pengajuan', $pengajuan->id)}}" method="post">
                             @csrf
-                                <a href="{{route('master.tampilkan.detail.permohonan.pkl-psg')}}" class="btn btn-outline-info btn-sm">
+                            @method('DELETE')
+                                <a href="{{route('master.tampilkan.detail.permohonan.pkl-psg', $pengajuan->id)}}" class="btn btn-outline-info btn-sm">
                                      Detail Pengajuan
                                </a>
+                               <button type="submit" class="btn btn-outline-danger btn-sm">
+                                     Hapus Data
+                               </button>
                             </form>
                             <!-- penutup -->
-                        </td>
+                                    </td>
                                 </tr>
-                            
+                            @empty
+                                <tr>
+                                    <td colspan="4">
+                                        data yang anda minta belum tersedia.
+                                    </td>
+                                </tr>
+                            @endforelse
                         </tbody>
                     </table>
                 </div>
